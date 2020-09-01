@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(221, 215, 215);
+}
+
+.cabecalho {
+    background: rgb(31, 32, 30);
+    color: #fff;
+    border-bottom: solid 5px #4faddb;
+    height: 80px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.3em;
+    padding: 10px 15px;
+    transition: 0.4s;
+}
+
+.menu a:hover, .menu a.selected {
+    background-color: #4faddb;
+    color: #000;
+}
+
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu {
+    flex-grow: 10;
+    
+}
+
+.menu ul {
+    display: flex;
+    
+}
+
+
+h1 {
+    color: #eee;
+}
+
+.footer {
+    background: rgb(32, 30, 30);
+    border-top: solid 5px #4faddb;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 2fr;
+    gap: 5px;
+    font-size: .9em;
+}
+
+
+.footer .buttonTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.footer .buttonTop a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+
+    
+}
+
+.footer .buttonTop a:hover{
+    background-color: #4faddb;
+    color: #000;
+    
+}
+
+.footer .contentInsideCredit{  
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+   
+}
+
+
+.footer .contentInside{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;    
+    padding: 10px;
+}
+
+.footer .contentInside h3{
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+
+section {
+    margin-bottom: 5px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0094b0, #3b95d3);    
+}
+
+#start{
+    background: url(../img/technology-3389917_1920.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#start h1 {
+   color: #fd6924;   
+   font-size: 2em;
+   text-shadow: 2px 2px #0e5e9c;
+}
+
+#start .startButton{
+    font-size: 2em;
+    padding: 5px;
+    width: 200px;
+    background: darkblue;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+#start .startButton:hover {
+    background: #fd6924;
+    border: solid 5px darkblue;
+}
+
+#start .startButton a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 49px;
+
+}
+#start .startButton a:hover{
+    text-decoration: none;
+    padding: 0px 49px;
+
+}
+
+
+#od9 {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #4581db, #032c47);
+    padding-bottom: 30px;
+}
+
+#od9 .video {
+    margin-top: 5px;
+    margin-bottom: 80px;
+    margin-left: 5px;
+    flex: 70%;
+    max-width: 45vw;
+    height: 50vh;
+}
+
+#od9  iframe {
+    width: 40vw;
+}
+
+#od9 .sobre {
+    display: flex;
+    margin-left: 5px;
+    flex-direction: column;
+    padding: 20px;
+    width: auto;
+    color: #b4c07c;
+    text-align: justify;
+    font-size: 1em;
+
+
+}
+
+#od9 h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+#od9 p {
+    color: white;
+    text-shadow: 1px 1px black;
+   
+}
+
+#metas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    background: #fd6924;
+    background-image: url(../img/image_logo_clean_transparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#metas .metaDescription {
+    border: solid 1px white;   
+    padding: 30px;
+    text-align: justify;
+    color: white;
+    font-weight: 540;
+    transition: 0.5s;
+
+}
+
+#metas .metaDescription:hover {
+    background-color: #e64b03c4;
+}
+
+#metas .goals-mobile {
+    display: none;
+}
+
+#factsAndFigures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+    width: auto;
+    background: linear-gradient(to bottom , #4581db, #032c47);   
+
+}
+
+#factsAndFigures .facts {
+    border: solid 1px white;     
+}
+
+#factsAndFigures .facts img{
+    position: initial;
+    width: 80px;
+}
+
+#factsAndFigures .fact6 img,
+#factsAndFigures .fact5 img,
+#factsAndFigures .fact4 img{
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 55px;
+}
+
+#factsAndFigures .facts h1{
+    text-align: center;
+    font-size: 2.6em;
+    color: white;
+    margin-bottom: 2px;
+    justify-content: start;
+
+
+}
+
+#factsAndFigures .facts p {    
+    color: white;    
+    text-align: center;
+    padding: 5px;
+}
+
+#factsAndFigures .facts-mobile {
+    display: none;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+#Insdustria40 {
+    display: flex;
+    height: auto;
+    background: linear-gradient(to bottom , #4581db, #032c47);
+    
+}
+
+#Insdustria40 .video2{
+    margin-top: 10vh;
+    margin-bottom: 20px;
+}
+
+#Insdustria40 .aboutIndustry{
+    margin-top: 5vh;
+    padding: 10px;
+    color: white;
+    text-align: justify;
+    
+}
+
+#SobreMim{
+    display: flex;
+    height: auto;
+    background: linear-gradient(to bottom , #4581db, #032c47);
+}
+
+#SobreMim .selfImg {
+    margin: 30px;
+    padding-top: 50px;
+}
+
+#SobreMim .selfImg img{
+    border-radius: 50%;
+}
+
+#SobreMim .aboutMeContent {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 10px;    
+    color: white;
+    padding: 20px;
+}
+
+#SobreMim .aboutMeContent h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fd6924;
+    font-size: 1.8em;
+    text-shadow: 1px 1px black;
+}
+
+#SobreMim .aboutMeContent p{
+    font-size: 1.5em;
+}
+#SobreMim .socialMedias{
+    display: flex;
+    flex-direction: column;        
+    text-align: center;
+    align-items: center;  
+    font-size: 4em;   
+    
+}
+
+#SobreMim .socialMedias a{
+    margin: 10px;
+    text-decoration: none;        
+}
+
+#git{
+    color: black;     
+}
+
+#in{
+    color: #007bb6; 
+}
+
+#ig{
+    color: #c13584;
+}
+
+
+@media(max-width: 1000px) {
+    .menu {
+        display: none;
+    }
+
+    .footer {        
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer .footer-content{
+        margin-top: 2px;
+        border-left: solid 0px;
+        border-bottom: solid 2px #4faddb;
+        padding: 20px;
+    }
+
+    #od9 p {
+        margin-bottom: -2px;
+        font-size: .99999em;
+        height: auto;
+    }
+
+    #od9 {
+        height: auto;
+    }
+    
+    #od9 .sobre{
+        height: auto;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+
+    #start .startButton{    
+        font-size: 1.5em;
+        padding: 5px;
+        background: darkblue;
+        border-radius: 20px;
+    }
+
+    #od9 {
+        flex-direction: column;           
+      
+    }
+
+    #od9 .video {
+        margin-top: 10px;
+        margin-left: 10px;
+        flex: 50%;
+        max-width: 95vw;
+        max-height: 25vh;
+    }
+    
+    #od9 .video iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #od9 .sobre {
+        display: flex;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 98vw;
+        height: auto;
+        font-size: 0.999999em;
+    }
+
+    #metas {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        background: #fd6924; 
+    }
+
+    #metas .goals-mobile {
+        display: block;
+        text-align: center;
+       
+    }
+    #factsAndFigures {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    
+    
+    }
+
+    #factsAndFigures .facts-mobile {
+        display: block;
+        text-align: center;
+    }
+
+    #Insdustria40 {
+        display: flex;
+        flex-direction: column;
+    
+        
+    }
+    
+    #Insdustria40 .video2 iframe{
+        width: 100%;
+        height: 100%;
+    }
+    
+    #Insdustria40 .aboutIndustry{
+        margin-top: 5vh;
+        padding: 10px;
+        color: white;
+        text-align: justify;
+        
+    }
+
+    #SobreMim{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #SobreMim .socialMedias{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;       
+        font-size: 3em;
+        padding-bottom: 20px;
+
+    }
+
+    #SobreMim .selfImg {      
+       text-align: center;
+    }   
+
+    #SobreMim .socialMedias{
+        text-align: center;
+        font-size: 3em;
+        
+    }
+
+    #SobreMim .socialMedias a{
+        margin: 0 20px 0 20px;
+        text-decoration: none;        
+    }
+}
+
+@media(min-width: 1402px){
+
+    #od9 {       
+        min-height: auto;
+        width: auto;
+        
+    }
+
+    #od9 .sobre{
+        margin-top: 13vh;
+    }
+
+    #Insdustria40{
+        font-size: 1.5em;
+    }
+
+    #Insdustria40 .aboutIndustry{
+        margin-top: 3px;
+    }
+
+    #SobreMim .socialMedias a{
+        margin: 0;
+        margin-right: 15px;
+        text-decoration: none;        
+    }
+
+}
